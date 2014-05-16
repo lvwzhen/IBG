@@ -1,6 +1,6 @@
 ## IBG
 
-** a inline-block grids **
+**a inline-block grids**
 
 ![image](screenshot.png)
 

@@ -2,6 +2,8 @@
 
 **a inline-block grids**
 
+[DEMO](http://lvwzhen.github.io/IBG/)
+
 ![image](screenshot.png)
 
 

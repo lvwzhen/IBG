@@ -1,0 +1,87 @@
+@charset "utf-8";
+
+
+
+/*统一盒模型*/
+*, *:before, *:after {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.container {
+    margin-right: auto;
+    margin-left: auto;
+}   
+.row {
+    font-size:0;/* 所有浏览器 */
+    *word-spacing:-1px;/* IE6、7 */
+}
+.row [class^="g-"]{
+    vertical-align:top;
+    word-spacing: normal;
+    letter-spacing: normal;
+    font-size: 14px;
+}
+@media screen and (-webkit-min-device-pixel-ratio:0){
+/* firefox 中 letter-spacing 会导致脱离普通流的元素水平位移 */
+     .row{
+            letter-spacing:-5px;/* Safari 等不支持字体大小为 0 的浏览器, N 根据父级字体调节*/
+    }
+}
+
+@media(min-width: 992px){
+
+    [class^="g-"] {
+    display: inline-block;
+    *display:inline;
+    *zoom:1;
+    }
+
+    .g-12 {
+         width: 100%
+    }
+
+    .g-11 {
+        width: 91.66666666666666%
+    }
+
+    .g-10 {
+        width: 83.33333333333334%
+    }
+
+    .g-9 {
+        width: 75%
+    }
+
+    .g-8 {
+        width: 66.66666666666666%
+    }
+
+    .g-7 {
+        width: 58.333333333333336%
+    }
+
+    .g-6 {
+        width: 50%
+    }
+
+    .g-5 {
+        width: 41.66666666666667%
+    }
+
+    .g-4 {
+        width: 33.33333333333333%
+    }
+
+    .g-3 {
+        width: 25%
+    }
+
+    .g-2 {
+        width: 16.666666666666664%
+    }
+
+    .g-1 {
+        width: 8.333333333333332%
+    }   
+}

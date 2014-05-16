@@ -6,6 +6,66 @@
 
 ![image](screenshot.png)
 
+###Usage
+
+**HTML**
+
+```html
+<div class="container">
+	<div class="row">
+    	<div class="g-1">grid-1</div>
+        ...
+        <div class="g-1">grid-1</div>    
+    </div>
+</div>
+```
+
+**CSS**
+
+```css
+.row {
+    font-size:0;/* 所有浏览器 */
+    *word-spacing:-1px;/* IE6、7 */
+}
+.row [class^="g-"]{
+    vertical-align:top;
+    word-spacing: normal;
+    letter-spacing: normal;
+    font-size: 14px;
+}
+@media screen and (-webkit-min-device-pixel-ratio:0){
+/* firefox 中 letter-spacing 会导致脱离普通流的元素水平位移 */
+     .row{
+            letter-spacing:-5px;/* Safari 等不支持字体大小为 0 的浏览器, N 根据父级字体调节*/
+    }
+}
+
+@media(min-width: 992px){
+
+    [class^="g-"] {
+    display: inline-block;
+    *display:inline;
+    *zoom:1;
+    }
+
+    .g-12 {
+         width: 100%
+    }
+
+    .g-11 {
+        width: 91.66666666666666%
+    }
+
+    .g-10 {
+        width: 83.33333333333334%
+    }
+    ...
+    
+    .g-1 {
+        width: 8.333333333333332%
+    } 
+}
+```
 
 ## MIT license
 

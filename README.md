@@ -23,21 +23,60 @@
 **CSS**
 
 ```css
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}   
 .row {
     font-size:0;/* 所有浏览器 */
     *word-spacing:-1px;/* IE6、7 */
+    margin-right: -15px;
+    margin-left: -15px;
 }
-.row [class^="g-"]{
+[class*="g-"]{
     vertical-align:top;
     word-spacing: normal;
     letter-spacing: normal;
     font-size: 14px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 @media screen and (-webkit-min-device-pixel-ratio:0){
 /* firefox 中 letter-spacing 会导致脱离普通流的元素水平位移 */
      .row{
             letter-spacing:-5px;/* Safari 等不支持字体大小为 0 的浏览器, N 根据父级字体调节*/
     }
+}
+
+//Responsive
+
+@media (min-width: 768px){
+    .container {
+    width: 750px;
+    }
+}
+@media (min-width: 992px){
+    .container {
+    width: 970px;
+    }
+}
+@media (min-width: 1200px){
+    .container {
+    width: 1170px;
+    }
+}
+.g-s-12 {
+     width: 100%
+}
+...
+.g-s-2 {
+    width: 16.666666666666664%
+}
+
+.g-s-1 {
+    width: 8.333333333333332%
 }
 
 @media(min-width: 992px){
@@ -66,6 +105,28 @@
     } 
 }
 ```
+
+**Non-responsive**
+
+1. remove viewport `<meta>` 
+
+`<meta name="viewport" content="width=device-width, initial-scale=1.0">`
+
+2. set width for container 
+
+`.container { width: 970px !important; }`
+
+3. use `.g-s-*` classe
+
+```html
+<div class="row">
+    <div class="g-s-3">.g-s-3</div>
+    <div class="g-s-9">.g-s-9</div>
+</div>
+```
+
+[DEMO](http://lvwzhen.github.io/IBG/non-responsive.html)
+
 
 ## MIT license
 

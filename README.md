@@ -1,12 +1,12 @@
 ## IBG
 
-**a inline-block grids**
+**a inline-block grid**
 
 [DEMO](http://lvwzhen.github.io/IBG/)
 
 ![image](screenshot.png)
 
-###Usage
+### Usage
 
 **HTML**
 

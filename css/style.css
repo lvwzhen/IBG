@@ -1,24 +1,25 @@
-@charset "utf-8";
+@charset"utf-8";
 
 /*统一盒模型*/
-*, *:before, *:after {
+ *, *:before, *:after {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
-
 .container {
     margin-right: auto;
     margin-left: auto;
     padding-right: 15px;
     padding-left: 15px;
-}   
+}
 .row {
     margin-right: -15px;
     margin-left: -15px;
-    font-size:0;/* 所有浏览器 */
-    *word-spacing:-1px;/* IE6、7 */
+    font-size:0;
+    /* 所有浏览器 */
+    *word-spacing:-1px;
+    /* IE6、7 */
 }
-.g-s-1,.g-s-2,.g-s-3,.g-s-4,.g-s-5,.g-s-6,.g-s-7,.g-s-8,.g-s-9,.g-s-10,.g-s-11,.g-s-12,.g-1,.g-2,.g-3,.g-4,.g-5,.g-6,.g-7,.g-8,.g-9,.g-10,.g-11,.g-12,.g-x {
+.g-s-1, .g-s-2, .g-s-3, .g-s-4, .g-s-5, .g-s-6, .g-s-7, .g-s-8, .g-s-9, .g-s-10, .g-s-11, .g-s-12, .g-1, .g-2, .g-3, .g-4, .g-5, .g-6, .g-7, .g-8, .g-9, .g-10, .g-11, .g-12, .g-x {
     padding-right: 15px;
     padding-left: 15px;
     vertical-align:top;
@@ -26,138 +27,109 @@
     letter-spacing: normal;
     font-size: 14px;
 }
-
-@media screen and (-webkit-min-device-pixel-ratio:0){
-/* firefox 中 letter-spacing 会导致脱离普通流的元素水平位移 */
-     .row{
-            letter-spacing:-5px;/* Safari 等不支持字体大小为 0 的浏览器, N 根据父级字体调节*/
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    /* firefox 中 letter-spacing 会导致脱离普通流的元素水平位移 */
+    .row {
+        letter-spacing:-5px;
+        /* Safari 等不支持字体大小为 0 的浏览器, N 根据父级字体调节*/
     }
 }
-
-@media (min-width: 768px){
+@media (min-width: 768px) {
     .container {
-    width: 750px;
+        width: 750px;
     }
 }
-@media (min-width: 992px){
+@media (min-width: 992px) {
     .container {
-    width: 970px;
+        width: 970px;
     }
 }
-@media (min-width: 1200px){
+@media (min-width: 1200px) {
     .container {
-    width: 1170px;
+        width: 1170px;
     }
 }
-    
-.g-s-1,.g-s-2,.g-s-3,.g-s-4,.g-s-5,.g-s-6,.g-s-7,.g-s-8,.g-s-9,.g-s-10,.g-s-11,.g-s-12,.g-x {
+.g-s-1, .g-s-2, .g-s-3, .g-s-4, .g-s-5, .g-s-6, .g-s-7, .g-s-8, .g-s-9, .g-s-10, .g-s-11, .g-s-12, .g-x {
     display: inline-block;
     *display:inline;
     *zoom:1;
 }
-
 .g-s-12 {
-     width: 100%;
+    width: 100%;
 }
-
 .g-s-11 {
     width: 91.66666666666666%;
 }
-
 .g-s-10 {
     width: 83.33333333333334%;
 }
-
 .g-s-9 {
     width: 75%;
 }
-
 .g-s-8 {
     width: 66.66666666666666%;
 }
-
 .g-s-7 {
     width: 58.333333333333336%;
 }
-
 .g-s-6 {
     width: 50%;
 }
-
 .g-s-5 {
     width: 41.66666666666667%;
 }
-
 .g-s-4 {
     width: 33.33333333333333%;
 }
-
 .g-s-3 {
     width: 25%;
 }
-
 .g-s-2 {
     width: 16.666666666666664%;
 }
-
 .g-s-1 {
     width: 8.333333333333332%;
 }
-
-
-@media(min-width: 992px){
-    
-    .g-1,.g-2,.g-3,.g-4,.g-5,.g-6,.g-7,.g-8,.g-9,.g-10,.g-11,.g-12 {
-    display: inline-block;
-    *display:inline;
-    *zoom:1;
+@media(min-width: 992px) {
+    .g-1, .g-2, .g-3, .g-4, .g-5, .g-6, .g-7, .g-8, .g-9, .g-10, .g-11, .g-12 {
+        display: inline-block;
+        *display:inline;
+        *zoom:1;
     }
-
     .g-12 {
-         width: 100%;
+        width: 100%;
     }
-
     .g-11 {
         width: 91.66666666666666%;
     }
-
     .g-10 {
         width: 83.33333333333334%;
     }
-
     .g-9 {
         width: 75%;
     }
-
     .g-8 {
         width: 66.66666666666666%;
     }
-
     .g-7 {
         width: 58.333333333333336%;
     }
-
     .g-6 {
         width: 50%;
     }
-
     .g-5 {
         width: 41.66666666666667%;
     }
-
     .g-4 {
         width: 33.33333333333333%;
     }
-
     .g-3 {
         width: 25%;
     }
-
     .g-2 {
         width: 16.666666666666664%;
     }
-
     .g-1 {
         width: 8.333333333333332%;
-    }   
+    }
 }

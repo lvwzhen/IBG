@@ -1,10 +1,6 @@
 ## IBG
 
-<<<<<<< HEAD
 **a inline-block grids**
-=======
-**a inline-block grid**
->>>>>>> master
 
 [DEMO](http://lvwzhen.github.io/IBG/)
 
